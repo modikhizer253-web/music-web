@@ -1,0 +1,76 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
+  background-size: 400% 400%;
+  animation: bgmove 12s ease infinite;
+  color: #333;
+}
+
+/* Animate background */
+@keyframes bgmove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* Device headings */
+h2 {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+}
+
+.phone {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+.laptop {
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+}
+
+/* Song cards */
+.song {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.song:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+/* Media players */
+audio, video {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  outline: none;
+}
